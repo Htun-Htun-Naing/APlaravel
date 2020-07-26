@@ -13,33 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home',[
-    	'name' => 'Home Page Template'
-    ]);
-});
+Route::get('/', 'HomeController@index');
+Route::get('/php', 'HomeController@phpPage');
+Route::get('/js', 'HomeController@jsPage');
 
 
-Route::get('/php', function () {
-    return view('php',[
-    	"data" => array(
-    		"lesson1" => "this is php lesson 1",
-    		"lesson2" => "this is php lesson 2",
-    		"lesson3" => "this is php lesson 3"
-
-    	)
-    ]);
-});
-
-
-Route::get('/js', function () {
-    return view('js',[
-    	"data" => array(
-    		"lesson1" => "this is js lesson 1",
-    		"lesson2" => "this is js lesson 2",
-    		"lesson3" => "this is js lesson 3"
-
-    	)
-    ]);
-});
 
