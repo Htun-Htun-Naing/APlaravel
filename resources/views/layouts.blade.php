@@ -8,7 +8,7 @@
 		<li><a href="php">PHP Page</a></li>
 
 		<li><a href="js">JS Page</a></li>
-		<li><a href="js">JS Page</a></li>
+		
 
 
 	</ul>
