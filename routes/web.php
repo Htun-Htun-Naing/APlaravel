@@ -14,14 +14,32 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home',[
+    	'name' => 'Home Page Template'
+    ]);
 });
 
-Route::get('/js', function () {
-    return view('js');
-});
 
 Route::get('/php', function () {
-    return view('php');
+    return view('php',[
+    	"data" => array(
+    		"lesson1" => "this is php lesson 1",
+    		"lesson2" => "this is php lesson 2",
+    		"lesson3" => "this is php lesson 3"
+
+    	)
+    ]);
+});
+
+
+Route::get('/js', function () {
+    return view('js',[
+    	"data" => array(
+    		"lesson1" => "this is js lesson 1",
+    		"lesson2" => "this is js lesson 2",
+    		"lesson3" => "this is js lesson 3"
+
+    	)
+    ]);
 });
 

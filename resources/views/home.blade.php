@@ -5,5 +5,5 @@
 @endsection
 
 @section("content")
-    <h2>Home Page</h2>
+    <h2>{{ $name }}</h2>
 @endsection
