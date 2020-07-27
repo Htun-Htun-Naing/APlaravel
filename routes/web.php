@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index');
-Route::get('/php', 'HomeController@phpPage');
-Route::get('/js', 'HomeController@jsPage');
+// Route::get('/', 'HomeController@index');
+// Route::get('/php', 'HomeController@phpPage');
+// Route::get('/js', 'HomeController@jsPage');
+
+Route::get('/', 'ReceipesController@index');
 
 
 
