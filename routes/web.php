@@ -17,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/php', 'HomeController@phpPage');
 // Route::get('/js', 'HomeController@jsPage');
 
-Route::get('/', 'ReceipesController@index');
+// Route::get('receipe', 'ReceipesController@index');
+// Route::get('create_receipe', 'ReceipesController@createReceipeForm');
+// Route::post('create', 'ReceipesController@create');
 
 
-
+Route::resource('receipe', 'ReceipeController');
